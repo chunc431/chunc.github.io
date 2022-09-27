@@ -1,0 +1,19 @@
+.wrapper {
+  background-color: palevioletred;
+}
+.entries {  
+  background-color: skyblue;
+}
+.entry {
+  padding: 50px;}
+.heading {
+  font-family: fantasy;
+  font-size: 60px;}
+.blank {
+    color: darkred;
+    border-bottom: 2px solid; 
+  }
+.bleh {
+    color: darkblue;
+  }
+body {font-size: 20px;}

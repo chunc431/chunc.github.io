@@ -1,0 +1,39 @@
+.wrapper {
+  background-color: lightskyblue;
+}
+.entries {  
+  background-color: skyblue;
+}
+.entry {
+  padding: 50px;}
+.heading {
+  font-family: fantasy;
+  font-size: 60px;}
+.blank {
+    color: black;
+    font-size: 50px;
+    border-bottom: 2px solid; 
+  }
+.bleh {
+    color: darkblue;
+    font-size: 30px;
+  }
+.second {
+    color: darkred;
+    font-size: 30px;
+  }
+.class {
+	font-size: 40px;
+  }
+.cloud {
+	font-size: 40px;
+	color: white;
+	text-indent: 20px;
+	white-space: pre;
+  }
+.lightning {
+	font-size: 40px;
+	color:  yellow;
+	white-space: pre;
+  }
+body {font-size: 20px;}
