@@ -1,0 +1,96 @@
+.wrapper {
+  background-color: lightgoldenrodyellow;
+}
+.heading {
+  font-family: fantasy;
+  font-size: 60px;}
+.blank {
+  color: lightcoral;
+  font-size: 50px;
+  border-bottom: 2px solid; 
+}
+.content {
+  max-width: 1000px;
+  padding: 100px 30px;
+  margin: auto;
+  font-weight: 300;
+}
+body {
+  color:  lightcoral;
+  font-size: 40px;
+}
+.simplelink {
+  background: -webkit-linear-gradient(#e128ff, #ff5151);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.8s ease;
+}
+.simplelink:hover {
+  background: -webkit-radial-gradient(#40ff00, #7d81ff, #00ed8a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+.rabbit {
+margin-top: 60px;
+transition: all 0.5s ease;
+}
+.rabbit:hover {
+  -webkit-transform: rotate(-360deg) scale(2);
+  transform: rotate(-360deg) scale(2);
+  cursor: pointer;
+}
+.pig {
+margin-top: 60px;
+transition: all 0.5s ease;
+}
+.pig:hover {
+  -webkit-transform: rotate(-360deg) scale(2);
+  transform: rotate(-360deg) scale(2);
+  cursor: pointer;
+}
+.dog {
+margin-top: 60px;
+transition: all 0.5s ease;
+}
+.dog:hover {
+  -webkit-transform: rotate(-360deg) scale(2);
+  transform: rotate(-360deg) scale(2);
+  cursor: pointer;
+}
+.elephant {
+margin-top: 60px;
+transition: all 0.5s ease;
+}
+.elephant:hover {
+  -webkit-transform: rotate(-360deg) scale(2);
+  transform: rotate(-360deg) scale(2);
+  cursor: pointer;
+}
+.lion {
+margin-top: 60px;
+transition: all 0.5s ease;
+}
+.lion:hover {
+  -webkit-transform: rotate(-360deg) scale(2);
+  transform: rotate(-360deg) scale(2);
+  cursor: pointer;
+}
+.tiger {
+margin-top: 60px;
+transition: all 0.5s ease;
+}
+.tiger:hover {
+  -webkit-transform: rotate(-360deg) scale(2);
+  transform: rotate(-360deg) scale(2);
+  cursor: pointer;
+}
+.cat {
+margin-top: 60px;
+transition: all 0.5s ease;
+}
+.cat:hover {
+  -webkit-transform: rotate(-360deg) scale(2);
+  transform: rotate(-360deg) scale(2);
+  cursor: pointer;
+}

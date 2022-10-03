@@ -37,9 +37,10 @@ body {
 
 a.author {
     background-color: mediumturquoise;
+    text-decoration: none;
 }
 
-a.author: hover {
+a.author:hover {
     background-color: black;
     color: white;
     cursor: pointer;
