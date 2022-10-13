@@ -1,0 +1,78 @@
+html {
+  background-color: #d9b077;
+}
+h1 {
+  text-align: center;
+}
+.blank {
+    color: white;
+    text-decoration: underline;
+  }
+.wrapper {
+  background-color: #d9b077;
+}
+.heading {
+  font-family: dx-together-std, sans-serif;
+  font-style: normal;
+  font-weight: 500;;
+  font-size: 30px;
+}
+.word {
+  display: flex;
+  justify-content:  space-evenly;
+  padding:40px;
+  background-color: white;
+  min-height: 60px;
+  color:  #d9b077;
+  font-size:  60px;
+  text-align:  center;
+  font-family: 'Nanum Pen Script', cursive;
+}
+.drawing {
+	text-align: center;
+}
+.drawing {
+transition: all 0.5s ease;
+}
+.drawing:hover {
+  -webkit-transform: rotate(-360deg) scale(2);
+  transform: rotate(-360deg) scale(2);
+  cursor: pointer;
+}
+.text {
+  display: flex;
+  justify-content:  space-evenly;
+  padding:40px;
+  background-color: white;
+  min-height: 60px;
+  font-family: 'Archivo Narrow', sans-serif;
+  color:  #d9b077;
+  font-size:  60px;
+  text-align:  center;
+  font-family: 'Nanum Pen Script', cursive;
+}
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 150px;
+	font-family: 'Archivo Narrow', sans-serif;
+  	color:  white;
+  	font-size:  80px;
+}
+.character {
+	max-width: 100%;
+	flex-basis: 50%;
+}
+
+/*@media (max-width: 992px) {
+  html {
+    background-color: black;
+    color: #d9b077;
+  }
+}
+@media (max-width: 992px) {
+  .title {
+    background-color: darkgreen;
+    color:  white;
+  }
