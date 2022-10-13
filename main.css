@@ -1,6 +1,10 @@
 h1 {
   text-align: center;
 }
+.blank:hover {
+  color: white;
+  cursor: pointer;
+}
 .blank {
     color: sienna;
     border-bottom: 2px solid; 
