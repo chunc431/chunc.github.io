@@ -1,19 +1,38 @@
+h1 {
+  text-align: center;
+}
+.blank {
+    color: sienna;
+    border-bottom: 2px solid; 
+  }
 .wrapper {
-  background-color: palevioletred;
+  background-color: #d9b077;
+}
+.heading {
+  font-family: dx-together-std, sans-serif;
+  font-style: normal;
+  font-weight: 500;;
+  font-size: 60px;
+}
+.clickme {
+  font-family: dx-together-std, sans-serif;
+  font-style: normal;
+  font-weight: 500;;
+  font-size: 60px;
+  color: white;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes blink {
+  0%{opacity: 1.0 ;}
+  50%{opacity: 0.0 ;}
+  100%{opacity: 1.0 ;}
 }
 .entries {  
-  background-color: skyblue;
+  background-color: #d9b077;
+  text-align: center;
 }
 .entry {
   padding: 50px;}
-.heading {
-  font-family: fantasy;
-  font-size: 60px;}
-.blank {
-    color: darkred;
-    border-bottom: 2px solid; 
-  }
-.bleh {
-    color: darkblue;
-  }
-body {font-size: 20px;}

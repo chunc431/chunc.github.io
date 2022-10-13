@@ -1,39 +1,38 @@
-.wrapper {
-  background-color: paleturquoise;
+h1 {
+  text-align: center;
 }
-.heading {
-  font-family: fantasy;
-  font-size: 60px;}
 .blank {
-    color: darkturquoise;
-    font-size: 50px;
+    color: sienna;
     border-bottom: 2px solid; 
   }
-.classy {
-    color: black;
-    font-size: 40px;
-    align-content: center;
-    font-family: 'Great Vibes', cursive;
-  }
-.tiny {
-    color: black;
-    font-size: 20px;
-    align-content: center;
-    font-family: 'Shadows Into Light', cursive;
-  }
-.bold {
-    color: black;
-    font-size: 40px;
-    align-content: center;
-    font-family: 'Titan One', cursive;
-  }
-.boring {
-    color: black;
-    font-size: 30px;
-    align-content: center;
-    font-family: 'Roboto', sans-serif;
-  }
-.class {
-  font-size: 40px;
-  }
-body {font-size: 20px;}
+.wrapper {
+  background-color: #d9b077;
+}
+.heading {
+  font-family: dx-together-std, sans-serif;
+  font-style: normal;
+  font-weight: 500;;
+  font-size: 60px;
+}
+.clickme {
+  font-family: dx-together-std, sans-serif;
+  font-style: normal;
+  font-weight: 500;;
+  font-size: 60px;
+  color: white;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes blink {
+  0%{opacity: 1.0 ;}
+  50%{opacity: 0.0 ;}
+  100%{opacity: 1.0 ;}
+}
+.entries {  
+  background-color: #d9b077;
+  text-align: center;
+}
+.entry {
+  padding: 50px;}
