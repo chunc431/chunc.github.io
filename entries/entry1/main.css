@@ -15,7 +15,7 @@ h1 {
   font-family: dx-together-std, sans-serif;
   font-style: normal;
   font-weight: 500;;
-  font-size: 30px;
+  font-size: 40px;
 }
 .word {
   display: flex;
@@ -27,6 +27,14 @@ h1 {
   font-size:  60px;
   text-align:  center;
   font-family: 'Nanum Pen Script', cursive;
+}
+.larger {
+  font-style: italic;
+  transition: all 2s ease-in-out;
+}
+.larger:hover {
+  cursor: pointer;
+  font-size: 2em;
 }
 .drawing {
 	text-align: center;
@@ -51,28 +59,63 @@ transition: all 0.5s ease;
   text-align:  center;
   font-family: 'Nanum Pen Script', cursive;
 }
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #d9b077;
+  min-width: 50px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  font-size: 1vw; font-size: 15px;
+  color: white;
+}
+.text:hover .dropdown {
+  display: block;
+}
 .container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin-left: 150px;
 	font-family: 'Archivo Narrow', sans-serif;
-  	color:  white;
-  	font-size:  80px;
+  color:  white;
+  font-size:  110px;
+  font-family: dx-together-std, sans-serif;
+	font-style: normal;
+	font-weight: 500;
 }
 .character {
 	max-width: 100%;
 	flex-basis: 50%;
 }
-
-/*@media (max-width: 992px) {
+@media (max-width: 992px) {
   html {
-    background-color: black;
+    background-color: white;
     color: #d9b077;
   }
 }
 @media (max-width: 992px) {
-  .title {
-    background-color: darkgreen;
-    color:  white;
+  .blank {
+    background-color: white;
+    color: #d9b077;
   }
+}
+@media (max-width: 992px) {
+  .container {
+    background-color: white;
+    color: #d9b077;
+  }
+}
+@media (max-width: 992px) {
+  .word {
+    background-color: #d9b077;
+    color: white;
+  }
+}
+@media (max-width: 992px) {
+  .text {
+    background-color: #d9b077;
+    color: white;
+  }
+}
