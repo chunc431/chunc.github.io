@@ -1,39 +1,121 @@
-.wrapper {
-  background-color: lightskyblue;
+html {
+  background-color: #d9b077;
 }
-.entries {  
-  background-color: skyblue;
+h1 {
+  text-align: center;
 }
-.entry {
-  padding: 50px;}
-.heading {
-  font-family: fantasy;
-  font-size: 60px;}
 .blank {
-    color: black;
-    font-size: 50px;
-    border-bottom: 2px solid; 
+    color: white;
+    text-decoration: underline;
   }
-.bleh {
-    color: darkblue;
-    font-size: 30px;
+.wrapper {
+  background-color: #d9b077;
+}
+.heading {
+  font-family: dx-together-std, sans-serif;
+  font-style: normal;
+  font-weight: 500;;
+  font-size: 40px;
+}
+.word {
+  display: flex;
+  justify-content:  space-evenly;
+  padding:40px;
+  background-color: white;
+  min-height: 60px;
+  color:  #d9b077;
+  font-size:  60px;
+  text-align:  center;
+  font-family: 'Nanum Pen Script', cursive;
+}
+.larger {
+  font-style: italic;
+  transition: all 2s ease-in-out;
+}
+.larger:hover {
+  cursor: pointer;
+  font-size: 2em;
+}
+.drawing {
+  text-align: center;
+}
+.drawing {
+transition: all 0.5s ease;
+}
+.drawing:hover {
+  -webkit-transform: rotate(-360deg) scale(2);
+  transform: rotate(-360deg) scale(2);
+  cursor: pointer;
+}
+.text {
+  display: flex;
+  justify-content:  space-evenly;
+  padding:40px;
+  background-color: white;
+  min-height: 60px;
+  font-family: 'Archivo Narrow', sans-serif;
+  color:  #d9b077;
+  font-size:  60px;
+  text-align:  center;
+  font-family: 'Nanum Pen Script', cursive;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #d9b077;
+  min-width: 50px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  font-size: 1vw; font-size: 15px;
+  color: white;
+}
+.text:hover .dropdown {
+  display: block;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 150px;
+  font-family: 'Archivo Narrow', sans-serif;
+  color:  white;
+  font-size:  110px;
+  font-family: dx-together-std, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+.character {
+  max-width: 100%;
+  flex-basis: 50%;
+}
+@media (max-width: 992px) {
+  html {
+    background-color: white;
+    color: #d9b077;
   }
-.second {
-    color: darkred;
-    font-size: 30px;
+}
+@media (max-width: 992px) {
+  .blank {
+    background-color: white;
+    color: #d9b077;
   }
-.class {
-	font-size: 40px;
+}
+@media (max-width: 992px) {
+  .container {
+    background-color: white;
+    color: #d9b077;
   }
-.cloud {
-	font-size: 40px;
-	color: white;
-	text-indent: 20px;
-	white-space: pre;
+}
+@media (max-width: 992px) {
+  .word {
+    background-color: #d9b077;
+    color: white;
   }
-.lightning {
-	font-size: 40px;
-	color:  yellow;
-	white-space: pre;
+}
+@media (max-width: 992px) {
+  .text {
+    background-color: #d9b077;
+    color: white;
   }
-body {font-size: 20px;}
+}

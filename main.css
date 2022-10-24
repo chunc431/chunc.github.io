@@ -42,4 +42,35 @@ h1 {
   text-align: center;
 }
 .entry {
-  padding: 50px;}
+  padding: 50px;
+}
+@media (max-width: 992px) {
+  html {
+    background-color: white;
+    color: #d9b077;
+  }
+}
+@media (max-width: 992px) {
+  .blank {
+    background-color: white;
+    color: sienna;
+  }
+}
+@media (max-width: 992px) {
+  .entries {
+    background-color: white;
+    color: #d9b077;
+  }
+}
+@media (max-width: 992px) {
+  .clickme {
+    background-color: white;
+    color: #d9b077;
+  }
+}
+@media (max-width: 992px) {
+  .wrapper {
+    background-color: white;
+    color: sienna;
+  }
+}
