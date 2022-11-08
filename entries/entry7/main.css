@@ -4,6 +4,10 @@ html {
 h1 {
   text-align: center;
 }
+.tool {
+  position: fixed;
+  top: 100px;
+}
 .blank {
     color: white;
     text-decoration: underline;
@@ -57,7 +61,7 @@ animation-timing-function: linear;
   font-size: 2em;
 }
 .drawing {
-	text-align: center;
+  text-align: center;
 }
 .drawing {
 transition: all 0.5s ease;
@@ -94,20 +98,50 @@ transition: all 0.5s ease;
   display: block;
 }
 .container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-left: 150px;
-	font-family: 'Archivo Narrow', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 150px;
+  font-family: 'Archivo Narrow', sans-serif;
   color:  white;
   font-size:  110px;
   font-family: dx-together-std, sans-serif;
-	font-style: normal;
-	font-weight: 500;
+  font-style: normal;
+  font-weight: 500;
+}
+.container   {
+animation-name: fade;
+animation-duration: 2s;
+animation-iteration-count: 1;
+animation-timing-function: linear; 
+animation-play-state: paused;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container:hover {
+  animation-play-state: running;
+  cursor: pointer;
 }
 .character {
-	max-width: 100%;
-	flex-basis: 50%;
+  max-width: 100%;
+  flex-basis: 50%;
+}
+.return {
+  display: flex;
+  justify-content:  space-evenly;
+  padding:40px;
+  background-color: white;
+  min-height: 60px;
+  color:  #d9b077;
+  font-size:  60px;
+  text-align:  center;
+  font-family: 'Nanum Pen Script', cursive;
 }
 @media (max-width: 992px) {
   html {
@@ -135,6 +169,12 @@ transition: all 0.5s ease;
 }
 @media (max-width: 992px) {
   .text {
+    background-color: #d9b077;
+    color: white;
+  }
+}
+@media (max-width: 992px) {
+  .return {
     background-color: #d9b077;
     color: white;
   }
