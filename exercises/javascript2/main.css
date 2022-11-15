@@ -1,0 +1,52 @@
+body {
+  background-color:  black;
+}
+
+section {
+  display:  flex;
+  flex-direction:  column;
+  justify-content: center;
+  align-items:  center;
+  height:  100vh;
+}
+
+.button {
+  padding: 20px 50px;
+  border-radius: 30px;
+  background-color:  white;
+  color:  black;
+  font-size: 20px;
+  text-align:  center;
+  transition:  all 100ms;
+}
+
+.button:hover {
+  background-color: #DEB887;
+  cursor:  pointer;
+}
+
+.box {
+	padding: 20px 20px;
+	margin-top: 20px;
+	color: blueviolet;
+	background-color: white;
+	font-size: 10px;
+	text-align: center;
+}
+
+.buttonOn {
+  background-color:  black;
+  color:  white;
+}
+
+.boxLight {
+	background-color: teal;
+	color: lightpink;
+	border-radius: 100px;
+	border: 2px solid blue;
+	font-family: fantasy;
+}
+
+.light {
+  background-color: papayawhip;
+}
