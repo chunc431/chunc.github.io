@@ -126,9 +126,9 @@ transition: all 0.5s ease;
   cursor: pointer;
 }
 .option1On {
-  background-color: #ff5145;
+  background-color: #87cc6e;
   color: white;
-  font-family: cursive;
+  font-family: 'Nanum Pen Script', cursive;
 }
 .option2 {
   padding: 20px 50px;
@@ -150,7 +150,7 @@ transition: all 0.5s ease;
 .option2On {
   background-color: #ff5145;
   color: white;
-  font-family: cursive;
+  font-family: 'Nanum Pen Script', cursive;
 }
 .option3 {
   padding: 20px 50px;
@@ -172,7 +172,7 @@ transition: all 0.5s ease;
 .option3On {
   background-color: #ff5145;
   color: white;
-  font-family: cursive;
+  font-family: 'Nanum Pen Script', cursive;
 }
 .option4 {
   padding: 20px 50px;
@@ -194,7 +194,7 @@ transition: all 0.5s ease;
 .option4On {
   background-color: #ff5145;
   color: white;
-  font-family: cursive;
+  font-family: 'Nanum Pen Script', cursive;
 }
 .option5 {
   padding: 20px 50px;
@@ -216,7 +216,7 @@ transition: all 0.5s ease;
 .option5On {
   background-color: #ff5145;
   color: white;
-  font-family: cursive;
+  font-family: 'Nanum Pen Script', cursive;
 }
 .container {
   display: flex;
@@ -314,6 +314,54 @@ transition: all 0.5s ease;
 }
 @media (max-width: 992px) {
   .option1On {
+    background-color: white;
+    color: #d9b077;
+  }
+}
+@media (max-width: 992px) {
+  .option2 {
+    background-color: #d9b077;
+    color: white;
+  }
+}
+@media (max-width: 992px) {
+  .option2On {
+    background-color: white;
+    color: #d9b077;
+  }
+}
+@media (max-width: 992px) {
+  .option3 {
+    background-color: #d9b077;
+    color: white;
+  }
+}
+@media (max-width: 992px) {
+  .option3On {
+    background-color: white;
+    color: #d9b077;
+  }
+}
+@media (max-width: 992px) {
+  .option4 {
+    background-color: #d9b077;
+    color: white;
+  }
+}
+@media (max-width: 992px) {
+  .option4On {
+    background-color: white;
+    color: #d9b077;
+  }
+}
+@media (max-width: 992px) {
+  .option5 {
+    background-color: #d9b077;
+    color: white;
+  }
+}
+@media (max-width: 992px) {
+  .option5On {
     background-color: white;
     color: #d9b077;
   }
