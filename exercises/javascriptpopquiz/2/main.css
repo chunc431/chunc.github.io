@@ -1,0 +1,31 @@
+body {
+	background-color: powderblue;
+}
+.wrapper {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	color: lightpink;
+	font-size: 40px;
+}
+
+.button {
+  padding: 20px 50px;
+  border-radius: 30px;
+  background-color:  lightpink;
+  color:  powderblue;
+  font-size: 20px;
+  text-align:  center;
+  transition:  all 100ms;
+}
+
+.button:hover {
+  background-color: lightyellow;
+  cursor:  pointer;
+  transition: 500ms ease-in-out;
+}
+
+.buttonOn {
+  background-color:  lightyellow;
+  color:  lightpink;
+}

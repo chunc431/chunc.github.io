@@ -1,0 +1,15 @@
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+	  background-color: lightcoral;
+}
+.wrapper {
+	color: purple;
+	font-size: 40px;
+}
+

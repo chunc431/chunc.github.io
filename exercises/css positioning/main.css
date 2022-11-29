@@ -1,0 +1,39 @@
+body {
+  background-color: lavender;
+}
+
+div {
+  width: 500px;
+  height: 200px;
+}
+
+.static {
+  background-color: blue;
+  position: static;
+}
+
+.relative {
+  background-color: yellow;
+  position: relative;
+  top: 200px;
+  left: 100px;
+}
+
+.fixed {
+  background-color: purple;
+  position: fixed;
+  top: 200px;
+}
+*moves with the screen
+
+.absolute {
+  background-color: green;
+  position: absolute;
+  top: 50px;
+}
+
+.sticky {
+  background-color: red;
+  position: sticky;
+  top: 0;
+}

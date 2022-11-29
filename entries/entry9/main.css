@@ -71,6 +71,17 @@ transition: all 0.5s ease;
   transform: rotate(-360deg) scale(2);
   cursor: pointer;
 }
+.hover {
+  display:  flex;
+  color: white;
+  justify-content:  space-evenly;
+  background-color: #d9b077;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Nanum Pen Script', cursive;
+  margin-bottom: 20px;
+}
 .text {
   display: flex;
   justify-content:  space-evenly;
@@ -82,22 +93,117 @@ transition: all 0.5s ease;
   text-align:  center;
   font-family: 'Nanum Pen Script', cursive;
 }
-.dropdown {
+.korean1:hover .dropdown1 {
+  display: block;
+}
+.dropdown1 {
   display: none;
-  position: absolute;
+  position: relative;
   background-color: #d9b077;
   min-width: 50px;
+  padding: 10px 10px;
   box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-  padding: 50px 54px;
-  z-index: 1;
   font-size: 1vw; font-size: 30px;
   color: white;
   font-family: dx-together-std, sans-serif;
   font-weight: 500;
   font-style: normal;
 }
-.text:hover .dropdown {
+.korean2:hover .dropdown2 {
   display: block;
+}
+.dropdown2 {
+  display: none;
+  position: relative;
+  background-color: #d9b077;
+  min-width: 50px;
+  padding: 10px 10px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  font-size: 1vw; font-size: 30px;
+  color: white;
+  font-family: dx-together-std, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.korean3:hover .dropdown3 {
+  display: block;
+}
+.dropdown3 {
+  display: none;
+  position: relative;
+  background-color: #d9b077;
+  min-width: 50px;
+  padding: 10px 10px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  font-size: 1vw; font-size: 30px;
+  color: white;
+  font-family: dx-together-std, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.korean4:hover .dropdown4 {
+  display: block;
+}
+.dropdown4 {
+  display: none;
+  position: relative;
+  background-color: #d9b077;
+  min-width: 50px;
+  padding: 10px 10px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  font-size: 1vw; font-size: 30px;
+  color: white;
+  font-family: dx-together-std, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.korean5:hover .dropdown5 {
+  display: block;
+}
+.dropdown5 {
+  display: none;
+  position: relative;
+  background-color: #d9b077;
+  min-width: 50px;
+  padding: 10px 10px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  font-size: 1vw; font-size: 30px;
+  color: white;
+  font-family: dx-together-std, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.korean6:hover .dropdown6 {
+  display: block;
+}
+.dropdown6 {
+  display: none;
+  position: relative;
+  background-color: #d9b077;
+  min-width: 50px;
+  padding: 10px 10px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  font-size: 1vw; font-size: 30px;
+  color: white;
+  font-family: dx-together-std, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.korean7:hover .dropdown7 {
+  display: block;
+}
+.dropdown7 {
+  display: none;
+  position: relative;
+  background-color: #d9b077;
+  min-width: 50px;
+  padding: 10px 10px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  font-size: 1vw; font-size: 30px;
+  color: white;
+  font-family: dx-together-std, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 .test {
   text-align: center;
@@ -126,7 +232,7 @@ transition: all 0.5s ease;
   cursor: pointer;
 }
 .option1On {
-  background-color: #87cc6e;
+  background-color: #ff5145;
   color: white;
   font-family: 'Nanum Pen Script', cursive;
 }
@@ -214,9 +320,19 @@ transition: all 0.5s ease;
   cursor: pointer;
 }
 .option5On {
-  background-color: #ff5145;
+  background-color: #87cc6e;
   color: white;
   font-family: 'Nanum Pen Script', cursive;
+}
+.congrats {
+  margin-top: 40px;
+  font-family: dx-together-std, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .container {
   display: flex;
@@ -289,6 +405,12 @@ transition: all 0.5s ease;
   }
 }
 @media (max-width: 992px) {
+  .hover {
+    background-color: white;
+    color: #d9b077;
+  }
+}
+@media (max-width: 992px) {
   .word {
     background-color: #d9b077;
     color: white;
@@ -314,8 +436,8 @@ transition: all 0.5s ease;
 }
 @media (max-width: 992px) {
   .option1On {
-    background-color: white;
-    color: #d9b077;
+    background-color: #ff5145;
+    color: white;
   }
 }
 @media (max-width: 992px) {
@@ -326,8 +448,8 @@ transition: all 0.5s ease;
 }
 @media (max-width: 992px) {
   .option2On {
-    background-color: white;
-    color: #d9b077;
+    background-color: #ff5145;
+    color: white;
   }
 }
 @media (max-width: 992px) {
@@ -338,8 +460,8 @@ transition: all 0.5s ease;
 }
 @media (max-width: 992px) {
   .option3On {
-    background-color: white;
-    color: #d9b077;
+    background-color: #ff5145;
+    color: white;
   }
 }
 @media (max-width: 992px) {
@@ -350,8 +472,8 @@ transition: all 0.5s ease;
 }
 @media (max-width: 992px) {
   .option4On {
-    background-color: white;
-    color: #d9b077;
+    background-color: #ff5145;
+    color: white;
   }
 }
 @media (max-width: 992px) {
@@ -362,14 +484,25 @@ transition: all 0.5s ease;
 }
 @media (max-width: 992px) {
   .option5On {
-    background-color: white;
+    background-color: #87cc6e;
+    color: white;
+  }
+}
+@media (max-width: 992px) {
+  .congrats {
     color: #d9b077;
   }
 }
 @media (max-width: 992px) {
-  .return {
+  .container {
     background-color: #d9b077;
     color: white;
+  }
+}
+@media (max-width: 992px) {
+  .return {
+    background-color: white;
+    color: #d9b077;
   }
 }
 
