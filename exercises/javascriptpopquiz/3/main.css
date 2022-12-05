@@ -6,7 +6,7 @@ html {
 body {
     display: table-cell;
     vertical-align: middle;
-	  background-color: lightcoral;
+	   background-color: lightcoral;
 }
 .wrapper {
 	color: purple;
