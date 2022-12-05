@@ -22,9 +22,6 @@ h1 {
   font-size: 40px;
 }
 .word {
-  display: flex;
-  justify-content:  space-evenly;
-  padding:40px;
   background-color: white;
   min-height: 60px;
   color:  #d9b077;
@@ -497,6 +494,7 @@ transition: all 0.5s ease;
   .container {
     background-color: #d9b077;
     color: white;
+    flex-direction: column;
   }
 }
 @media (max-width: 992px) {
