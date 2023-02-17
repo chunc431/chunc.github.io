@@ -41,7 +41,7 @@ h1 {
   background-color: #fff;
   width: 35%;
   border-radius: 20px;
-  height: 150px;
+  height: 200px;
   transition: box-shadow 1s;
   z-index: 1;
 }
@@ -79,7 +79,7 @@ h1 {
   font-family: 'Viga', sans-serif;
   text-align: left;
   text-align: left;
-  z-index: 2;
+  z-index: 3;
 }
 
 .character1:hover {
@@ -115,7 +115,7 @@ h1 {
   font-family: 'Viga', sans-serif;
   width: 45%;
   text-align: right;
-  animation: color-change 2s forwards;
+  animation: color-change 1s forwards;
   z-index: 2;
 }
 
