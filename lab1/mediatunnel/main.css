@@ -67,14 +67,14 @@ body {
   .image-2 {
     opacity: 1;
     z-index: 2;
-    height: 70vh;
-    width: 90vw;
+    height: 50vh;
+    width: 100vw;
   }
   .image-1 {
     opacity: 0;
     z-index: 1;
-    height: 70vh;
-    width: 90vw;
+    height: 50vh;
+    width: 100vw;
   }
 }
 
