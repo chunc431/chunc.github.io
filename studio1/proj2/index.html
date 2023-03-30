@@ -1,30 +1,56 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Airtable API</title>
-
-    <!-- add reset to create consistency between browsers and devices. -->
     <link rel="stylesheet" type="text/css" href="./reset.css">
-    <link rel="stylesheet" type="text/css" href="./main.css">
-
-    <!-- add link to your javascript. be sure it includes "defer" -->
-    <script type="text/javascript" src="./airtable.browser.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Retro Sweets</title>
 </head>
-    <body>
-        <main>
-            <header class="header">
-                <h1>Mini Collection</h1>
-            </header>
-            <div class="grid">
-                <div class="grid-items">
-                    
-                </div>
-            </div>
-        </main>
-        <script type="text/javascript" src="./script.js" defer></script>
-    </body>
+<img src="imgs/bg.png" alt="striped background" class="bg">
+
+<body>
+
+    <div class="container">
+      <!-- Top column with image -->
+      <div class="candy-container">
+        <img class="small-image" src="imgs/bannertri.png" alt="banner img">
+        <img class="candy" src="imgs/bannerimg.png" alt="candy">
+        <div class="text-overlay">
+          <div class="retro">Retro</div>
+          <div class="sweets">Sweets</div>
+        </div>
+        <div class="text-overlay-shadow">
+          <div class="retro-shadow">Retro</div>
+          <div class="sweets-shadow">Sweets</div>
+        </div>
+      </div>
+      
+      <!-- Bottom column with 3 images -->
+      <div class="bottom-images">
+        <div class="bottom-image">
+          <a href="entries/chewy/index.html">
+          <img src="imgs/chewy.png" alt="chewy image 1">
+          <div class="text-overlay-sweets-1">Chewy</div>
+        </div>
+        <div class="bottom-image">
+          <a href="entries/choc/index.html">
+          <img src="imgs/choc.png" alt="chocolate image 2">
+          <div class="text-overlay-sweets-2">Chocolate</div>
+        </div>
+        <div class="bottom-image">
+          <a href="entries/hard/index.html">
+          <img src="imgs/hard.png" alt="hard candy image 3">
+          <div class="text-overlay-sweets-3">Hard Candy</div>
+        </div>
+      </div>
+    </div>
+
+</body>
+
 </html>
+
+   
