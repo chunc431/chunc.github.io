@@ -1,0 +1,151 @@
+html {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.candy-container {
+  display: flex;
+  justify-content: center;
+}
+
+.candy {
+  margin-top: 20px;
+  width: 32%;
+  justify-content: center;
+  position: relative;
+  z-index: -2;
+}
+
+.bottom-images {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  object-fit: contain;
+  margin-top: 20px;
+  align-items: baseline;
+}
+
+.bottom-image {
+  text-align: center;
+  width: 100%;
+  object-fit: contain;
+  position: relative;
+}
+
+.bottom-image img {
+  width: 55%;
+  object-fit: contain;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 11%;
+  left: 31%;
+  color: #fff;  
+  font-size: 15vh;
+  font-family: 'Lobster', cursive;
+  display: flex;
+}
+
+.retro {
+  color: #735E95;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+}
+
+.sweets {
+  color: #6D7FA5;
+  margin-left: 14px;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+}
+
+.small-image {
+  position: absolute;
+  left: 28%;
+  top: 25.5%;
+  transform: translateY(-50%);
+  width: 3%;
+  opacity: 0.6;
+}
+
+.text-overlay-shadow {
+  position: absolute;
+  top: 12.5%;
+  left: 30.5%;
+  color: #000;  
+  font-size: 15vh;
+  font-family: 'Lobster', cursive;
+  display: flex;
+}
+
+.retro-shadow {
+  color: #6D7FA5;
+  opacity: 0.6;
+  z-index: -1;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: #6D7FA5;
+}
+
+.sweets-shadow {
+  color: #735E95;
+  margin-left: 14px;
+  opacity: 0.6;
+  z-index: -1;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: #735E95;
+}
+
+.text-overlay-sweets-1 {
+  position: absolute;
+  top: 7%;
+  left: 40.5%;
+  color: #D35116;
+  font-size: 5vh;
+  font-family: 'Lobster', cursive;
+  -webkit-text-stroke-width: 1.7px;
+  -webkit-text-stroke-color: white;
+}
+
+.text-overlay-sweets-2 {
+  position: absolute;
+  top: 2.6%;
+  left: 36%;
+  color: #62BEAA;
+  font-size: 5vh;
+  font-family: 'Lobster', cursive;
+  -webkit-text-stroke-width: 1.7px;
+  -webkit-text-stroke-color: white;
+}
+
+.text-overlay-sweets-3 {
+  position: absolute;
+  top: 4%;
+  left: 32.6%;
+  color: #B63035;
+  font-size: 5vh;
+  font-family: 'Lobster', cursive;
+  -webkit-text-stroke-width: 1.7px;
+  -webkit-text-stroke-color: white;
+}
