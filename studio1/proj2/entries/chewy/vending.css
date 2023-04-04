@@ -298,11 +298,11 @@ html, body {
   opacity: 1;
 }
 
-/*@media (max-width: 500px) {
-  .sweet-image {
-    width: 90%;
+@media (max-width: 600px) {
+  .airtable-item {
+    width: 50%;
   }
-}*/
+}
 
 @media (max-width: 600px) {
   .right-container {
@@ -312,7 +312,7 @@ html, body {
 
 @media (max-width: 600px) {
   .ty-text {
-    font-size: 6vw;
+    font-size: 5.5vw;
   }
 }
 
@@ -326,6 +326,6 @@ html, body {
 
 @media (max-width: 600px) {
   .back {
-    width: 35%;
+    width: 30%;
   }
 }
