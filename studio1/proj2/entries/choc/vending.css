@@ -284,9 +284,10 @@ html, body {
 }
 
 .back {
+  display: flex;
   width: 20%;
+  margin: auto;
   margin-top: 2vh;
-  margin-left: 8vw;
 }
 .back img {
   width: 100%;
