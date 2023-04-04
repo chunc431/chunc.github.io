@@ -325,6 +325,24 @@ html, body {
 }
 
 @media (max-width: 600px) {
+  .sweet-title {
+    font-size: 3.5vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .sweet-des {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .sweet-date {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 600px) {
   .back {
     width: 30%;
   }
