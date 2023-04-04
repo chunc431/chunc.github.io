@@ -16,108 +16,49 @@ base("sweets")
       // only render candy that matches the current page candy type
       if (!candy.fields.Type.includes(candyType)) return;
 
-      let airtableItem = document.createElement("div");
+      let airtableItem = document.createElement("button");
       airtableItem.classList.add("airtable-item");
       airtableItem.setAttribute("data-price", candy.fields.Price);
 
       let sweetImg = document.createElement("img");
       sweetImg.src = candy.fields.Imgs[0].url;
       document.querySelector(".sweet-image").appendChild(sweetImg);
+
       airtableItem.append(sweetImg);
 
-//POP UPS
-// get the value of the data-candy attribute
-      let candyType = mainElement.getAttribute("data-candy");
+      document.querySelector(".sweet-image").appendChild(airtableItem);
 
-// apend pop up classes and pop up content classes for each candy type
-    if (candyType === 'Chewy') {
-      let popUpChewy = document.createElement("div");
-      popUpChewy.classList.add("pop-up-1");
-      airtableItem.appendChild(popUpChewy);
+      let popupContainer = document.createElement("div");
+      popupContainer.classList.add('popup-container')
+      airtableItem.append(popupContainer)
 
-      let popUpTitle = document.createElement("div");
-      popUpTitle.classList.add("pop-up-title");
-      popUpChewy.appendChild(popUpTitle);
+      let popupHead = document.createElement("div");
+      popupHead.classList.add('popup-head')
+      popupContainer.append(popupHead)
 
-      let popUpContent = document.createElement("div");
-      popUpContent.classList.add("pop-up-content");
-      popUpChewy.appendChild(popUpContent);
-    }
+      let popupContent = document.createElement("div");
+      popupContent.classList.add('popup-content')
+      popupContainer.append(popupContent)
 
-    if (candyType === 'Chocolate') {
-      let popUpChoc = document.createElement("div");
-      popUpChoc.classList.add("pop-up-2");
-      airtableItem.appendChild(popUpChoc);
-
-      let popUpTitle = document.createElement("div");
-      popUpTitle.classList.add("pop-up-title");
-      popUpChoc.appendChild(popUpTitle);
-
-      let popUpContent = document.createElement("div");
-      popUpContent.classList.add("pop-up-content");
-      popUpChoc.appendChild(popUpContent);
-    }
-
-    if (candyType === 'Hard') {
-      let popUpHard = document.createElement("div");
-      popUpHard.classList.add("pop-up-3");
-      airtableItem.appendChild(popUpHard);
-
-      let popUpTitle = document.createElement("div");
-      popUpTitle.classList.add("pop-up-title");
-      popUpHard.appendChild(popUpTitle);
-
-      let popUpContent = document.createElement("div");
-      popUpContent.classList.add("pop-up-content");
-      popUpHard.appendChild(popUpContent);
-    }
-
-// append pop up content spans to title & content classes
       let sweetTitle = document.createElement("span");
+      sweetTitle.classList.add("sweet-title");
       sweetTitle.innerHTML = candy.fields.Name;
-      document.querySelector(".pop-up-title").appendChild(sweetTitle);
-
-      let sweetDate = document.createElement("span");
-      sweetDate.innerHTML = candy.fields.Date;
-      document.querySelector(".pop-up-content").appendChild(sweetDate);
+      popupHead.appendChild(sweetTitle);
 
       let sweetDes = document.createElement("span");
+      sweetDes.classList.add("sweet-des");
       sweetDes.innerHTML = candy.fields.Description;
-      document.querySelector(".pop-up-content").appendChild(sweetDes);
+      popupContent.appendChild(sweetDes);
 
-      // get all pop up classes
-      const popUp1 = document.querySelector(".pop-up-1");
-      const popUp2 = document.querySelector(".pop-up-2");
-      const popUp3 = document.querySelector(".pop-up-3");
+      let sweetDate = document.createElement("span");
+      sweetDate.classList.add("sweet-date");
+      sweetDate.innerHTML = candy.fields.Date;
+      popupContent.appendChild(sweetDate);
 
-      // get the value of the data-candy attribute
-      const candyType = mainElement.getAttribute("data-candy");
-
-      // add click event listener to the sweet image
-      sweetImage.addEventListener("click", function (event) {
-        // check the candy type and toggle the appropriate pop up
-        if (candyType === "Chewy") {
-          popUp1.classList.toggle("pop-up-1-show");
-        } else if (candyType === "Chocolate") {
-          popUp2.classList.toggle("pop-up-2-show");
-        } else if (candyType === "Hard") {
-          popUp3.classList.toggle("pop-up-3-show");
-        }
-        event.stopPropagation();
-      });
-
-      // add click event listener to document to hide pop ups when clicked outside
-      document.addEventListener("click", function (event) {
-        if (!popUp1.contains(event.target)) {
-          popUp1.classList.remove("pop-up-1-show");
-        }
-        if (!popUp2.contains(event.target)) {
-          popUp2.classList.remove("pop-up-2-show");
-        }
-        if (!popUp3.contains(event.target)) {
-          popUp3.classList.remove("pop-up-3-show");
-        }
-      });
+      //create the popup for this candy item
+      airtableItem.addEventListener('click', () => {
+        popupContainer.classList.toggle('is-open')
+      })
 
     });
   });
@@ -136,6 +77,11 @@ function resetPage(filter) {
 
 document.querySelectorAll(".btn-price").forEach((btn) => {
   btn.addEventListener("click", (e) => {
+    document.body.classList.add("shake");
+    setTimeout(() => {
+      document.body.classList.remove("shake");
+    }, 300);
+    
     let clickedPrice = e.target.dataset.price;
 
     //reset any active filters

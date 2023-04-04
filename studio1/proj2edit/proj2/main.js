@@ -1,4 +1,4 @@
- //BASE
+//BASE
 var Airtable = require("airtable");
 
 var base = new Airtable({ apiKey: "keysA75kB2fYdEVkh" }).base(
@@ -16,44 +16,30 @@ base("sweets")
       // only render candy that matches the current page candy type
       if (!candy.fields.Type.includes(candyType)) return;
 
-      let airtableItem = document.createElement("div");
+      let airtableItem = document.createElement("button");
       airtableItem.classList.add("airtable-item");
       airtableItem.setAttribute("data-price", candy.fields.Price);
 
       let sweetImg = document.createElement("img");
       sweetImg.src = candy.fields.Imgs[0].url;
       document.querySelector(".sweet-image").appendChild(sweetImg);
+
       airtableItem.append(sweetImg);
 
-//POP UPS
+      document.querySelector(".sweet-image").appendChild(airtableItem);
+
+      let popupContainer = document.createElement("div");
+      popupContainer.classList.add('popup-container')
+      airtableItem.append(popupContainer)
+
       let sweetDate = document.createElement("span");
       sweetDate.innerHTML = candy.fields.Date;
-      document.querySelector(".pop-up-content").appendChild(sweetDate);
+      popupContainer.appendChild(sweetDate);
 
-      let popUp = document.createElement("div");
-      popUp.classList.add("pop-up");
-      airtableItem.appendChild(popUp);
-
-      let popUpTitle = document.createElement("div");
-      popUpTitle.classList.add("pop-up-title");
-      popUp.appendChild(popUpTitle);
-
-      let popUpContent = document.createElement("div");
-      popUpContent.classList.add("pop-up-content");
-      popUp.appendChild(popUpContent);
-
-      // show pop up when user clicks on sweet image
-      sweetImage.addEventListener("click", function (event) {
-      popUp.classList.toggle("show");
-      event.stopPropagation(); 
-      });
-
-      // hide pop up when user clicks outside of pop up box
-      document.addEventListener("click", function (event) {
-        if (!popUp.contains(event.target)) {
-          popUp.classList.remove("show");
-        }
-      });
+      //create the popup for this candy item
+      airtableItem.addEventListener('click', () => {
+        popupContainer.classList.toggle('is-open')
+      })
 
     });
   });
