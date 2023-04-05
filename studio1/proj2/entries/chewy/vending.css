@@ -305,6 +305,12 @@ html, body {
 }
 
 @media (max-width: 600px) {
+  .sweet-image .airtable-item {
+    border-bottom: 1vw solid #E1B337;
+  }
+}
+
+@media (max-width: 600px) {
   .right-container {
     width: 50%;
   }

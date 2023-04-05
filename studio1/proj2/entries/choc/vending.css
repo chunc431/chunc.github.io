@@ -297,3 +297,59 @@ html, body {
 .back:hover img {
   opacity: 1;
 }
+
+@media (max-width: 600px) {
+  .airtable-item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .sweet-image .airtable-item {
+    border-bottom: 1vw solid #E1B337;
+  }
+}
+
+@media (max-width: 600px) {
+  .right-container {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .ty-text {
+    font-size: 5.5vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .btn-price {
+    font-size: 4vw;
+    border: .4vw solid white;
+    margin-bottom: 7%;
+  }
+}
+
+@media (max-width: 600px) {
+  .sweet-title {
+    font-size: 3.5vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .sweet-des {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .sweet-date {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .back {
+    width: 30%;
+  }
+}
