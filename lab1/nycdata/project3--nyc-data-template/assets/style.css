@@ -68,3 +68,22 @@ h1, h2 {
 .activity-title:hover {
 	display: block;
 }
+
+.dataDot {
+	position: absolute;
+	z-index: 2;
+	background-color: red;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	transform: translateY(50%) translateX(-50%);
+}
+
+.map-container {
+	position: relative;
+	width: 100vw;
+}
+
+.map-container img{
+	width: 100vw;
+}

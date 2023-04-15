@@ -118,6 +118,23 @@ fetch('assets/data.json')
 		return response.json();	
 	})
 	.then(function(collection){
+		var mapY = 41.01680 - 40.43883
+		var mapX = -73.50215 - -74.36797
+		var firstData = {"latitude":40.813859696121, "longitude":-73.946269012437}
+
+		var dataX = (-73.50215 - firstData.longitude)/mapX*100
+		var dataY = (1-(41.01680 - firstData.latitude)/mapY)*100
+		var dataPoint = document.createElement("div")
+		dataPoint.style.left = `${dataX}%`
+		dataPoint.style.bottom = `${dataY}%`
+		dataPoint.classList.add("dataDot")
+		document.querySelector(".map-container").appendChild(dataPoint);
 		// And passes the data to the function, above!
-		renderItems(collection.reverse()) // In reverse order
+		// renderItems(collection.reverse()) // In reverse order
+	})
+
+	collection.forEach(item =>{
+		var dataY = (1-(41.01680 - item.latitude)/mapY)*100
+		var dataX = (-73.50215 - item.longitude)/mapX*100
+	// change item.latitude to whatever the json is labeled 
 	})
