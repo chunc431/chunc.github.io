@@ -1,0 +1,74 @@
+html {
+    background-color: #EEEDEA;
+}
+
+body {
+    font-family: 'Inria Serif';
+}
+
+.top-container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-container img {
+    width: 40%;
+    height: auto;
+}
+
+.text {
+    text-align: center;
+    color: #AD0000;
+    margin-top: 4vw;
+}
+.sub-title {
+    font-size: 2.5vw;
+}
+.title {
+    margin-top: 2vw;
+    margin-bottom: 6vw;
+    font-size: 5vw;
+}
+.scroll-btn {
+    width: 15%;
+    cursor: pointer;
+}
+
+.bot-container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    text-align: center;
+    color: #AD0000;
+    font-size: 1vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.rules {
+    text-align: center;
+    color: #AD0000;
+    font-size: 2.5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    font-weight: bold;
+}
+.start-btn {
+    border: 1px solid black;
+    font-size: 1.5vw;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+.start-btn:hover {
+    border: 1px solid #AD0000;
+    color: #AD0000;
+}
