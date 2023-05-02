@@ -10,7 +10,6 @@ body, html {
 
 .page {
 	width: 100%;
-	min-height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -19,8 +18,26 @@ body, html {
 
 #homepage {
 	background-color: white;
-	height: 100vh; 
 	overflow-y: hidden; 
+}
+
+/* Custom Scrollbar */
+body.main-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+body.main-container::-webkit-scrollbar-track {
+    background-color: #F3F8F3;
+}
+
+body.main-container::-webkit-scrollbar-thumb {
+    background-color: #004F60;
+    z-index: 4;
+}
+
+body.main-container::-webkit-scrollbar-thumb:hover {
+    background-color: #003844;
+    z-index: 4;
 }
 
 .header {
@@ -80,7 +97,7 @@ body, html {
 
 .linkedin img,
 .mail img {
-  max-height: 1.7rem;
+  max-height: 1.3rem;
   width: auto;
   vertical-align: middle;
   margin-right: 1.5rem;
@@ -92,14 +109,20 @@ body, html {
 	cursor: pointer;
 }
 
+.main-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
 .main {
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	width: 100%;
 	height: 50%;
-	margin: 0 auto;
 }
 
 .about {
@@ -113,10 +136,10 @@ body, html {
 
 .body {
 	margin: 3rem;
-    margin-left: 8rem;
-    margin-right: 8rem;
 	text-align: center;
 	color: #004F60;
+	margin-left: 10rem;
+    margin-right: 10rem;
 }
 .body h1, .body h2, .body h3 {
     font-size: 1.2rem;
@@ -135,14 +158,13 @@ body, html {
 	text-decoration: underline;
 }
 
-.footer {
-	position: fixed;
-	bottom: 2rem;
-	left: 50%;
-	transform: translateX(-50%);
+.main-footer {
+	position: relative;
+	text-align: center;
+	padding-bottom: 2rem;
 }
   
-.footer-text {
+.main-footer-text {
 	font-size: 1rem;
 	font-family: 'Inter';
 	font-weight: 300;

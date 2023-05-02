@@ -121,8 +121,8 @@ function renderItems(collection) {
 
   //tool tip offset
   document.body.addEventListener("mousemove", (e) => {
-    const xOffset = 350;
-    const yOffset = 80;
+    const xOffset = 300;
+    const yOffset = 100;
     const toolTip = document.querySelector(".tool-tip");
     const toolTipWidth = toolTip.offsetWidth;
     const toolTipHeight = toolTip.offsetHeight;
