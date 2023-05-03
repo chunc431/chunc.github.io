@@ -49,7 +49,7 @@ body {
 .info {
     text-align: center;
     color: #AD0000;
-    font-size: 1vw;
+    font-size: 1.5vw;
     margin-left: 5vw;
     margin-right: 5vw;
 }
@@ -72,4 +72,34 @@ body {
 .start-btn:hover {
     border: 1px solid #AD0000;
     color: #AD0000;
+}
+
+@media (max-width: 600px) {
+  .top-container img {
+    width: 60%;
+  }
+  .sub-title {
+    font-size: 4vw;
+  }
+  .title {
+    margin-top: 3vw;
+    margin-bottom: 7vw;
+    font-size: 7vw;
+    letter-spacing: 1vw;
+  }
+  .info {
+    font-size: 3vw;
+    margin-left: 9vw;
+    margin-right: 9vw;
+  }
+  .rules {
+    font-size: 5vw;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    margin-left: 9vw;
+    margin-right: 9vw;
+  }
+  .start-btn {
+    font-size: 3vw;
+  }
 }
