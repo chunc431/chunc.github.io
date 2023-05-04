@@ -37,6 +37,10 @@ body {
     width: 15%;
     cursor: pointer;
 }
+.scroll-btn:hover {
+    filter: brightness(2) saturate(0.7);
+	  cursor: pointer;
+}
 
 .bot-container {
     display: flex;

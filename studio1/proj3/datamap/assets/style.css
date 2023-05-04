@@ -18,6 +18,22 @@ body {
 	justify-content: center;
 }
 
+.home-btn {
+	position: absolute;
+	top: 2rem; 
+	left: 2rem;
+	z-index: 3;
+}
+
+.home-arrow {
+	height: 2rem; 
+}
+
+.home-btn:hover {
+	filter: brightness(2) saturate(0.7);
+	cursor: pointer;
+}
+
 .map-dot {
 	position: absolute;
 	z-index: 2;
@@ -265,5 +281,9 @@ body {
 
 	.info {
 		margin-top: 32.5px;
+	}
+
+	.back-container {
+		margin-top: 20px;
 	}
   }
