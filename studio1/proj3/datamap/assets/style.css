@@ -253,12 +253,17 @@ body {
 	.title {
 		margin-top: 20px;
 	}
+
 	.report {
 		margin-top: 25px;
 		letter-spacing: 1.44px;
 	}
 	
+	.result {
+		margin-top: 32.5px;
+	}
+
 	.info {
-		margin-top: 40px;
+		margin-top: 32.5px;
 	}
   }
