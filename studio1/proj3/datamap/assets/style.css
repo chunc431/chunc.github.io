@@ -240,4 +240,25 @@ body {
 	  width: 1400px;
 	  height: 1232.16px;
 	}
+
+	.pop-up-container{
+		width: 25rem;
+		height: 40rem;
+	}
+
+	.item-details {
+		margin: 20px;
+	}
+	
+	.title {
+		margin-top: 20px;
+	}
+	.report {
+		margin-top: 25px;
+		letter-spacing: 1.44px;
+	}
+	
+	.info {
+		margin-top: 40px;
+	}
   }
