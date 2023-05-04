@@ -42,7 +42,7 @@ body {
 	width: 100%;
 }
 
-.map-image {
+.map-wrapper {
 	transform: translateY(-23vw);
 }
 
@@ -233,9 +233,11 @@ body {
   
 	.map-container {
 	  width: 1400px;
+	  height: 1232.16px;
 	}
   
 	.map-container img {
 	  width: 1400px;
+	  height: 1232.16px;
 	}
   }
