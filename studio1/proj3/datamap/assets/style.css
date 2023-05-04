@@ -177,10 +177,6 @@ body {
 	background-color: #f2f2f2;
 }
 
-.item-details tr:first-child td {
-	text-align: center;
-}
-
 .item-details tr:first-child td:nth-child(1) {
 	width: 33.33%;
 }
