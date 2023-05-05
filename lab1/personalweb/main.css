@@ -34,6 +34,8 @@ body, html {
 	display: flex;
 	align-items: center;
   	justify-content: space-between;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0); 
+	transition: box-shadow 0.3s ease-in-out;
 }
 .left-header {
 	display: flex;
@@ -78,6 +80,10 @@ body, html {
 	margin-right: 1.5rem;
 }
 
+.header.scrolling-down {
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}  
+
 .linkedin img,
 .mail img {
   max-height: 1.3rem;
@@ -120,11 +126,11 @@ body, html {
 	color: #004F60;
 }
 
-.gd, .cd, .psod {
+.gd, .c, .d, .psod {
 	font-weight: bold;
 }
 
-.cd {
+.c, .d {
 	text-decoration: underline;
 }
 
@@ -206,6 +212,7 @@ body.main-container::-webkit-scrollbar-thumb:hover {
 	height: 14rem;
 	background-color: #eee;
 	overflow: hidden;
+	cursor: pointer;
 }
 
 .grid-item img {
@@ -257,6 +264,44 @@ body.main-container::-webkit-scrollbar-thumb:hover {
 	opacity: 0.8;
 }
 
+.modal-container {
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+	position: relative;
+	background-color: #fff;
+	margin: 15% auto;
+	padding: 20px;
+	border-radius: 4px;
+	width: 80%;
+	max-width: 600px;
+}
+
+.modal-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 5px 10px;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}  
+
+.close-btn {
+	cursor: pointer;
+}
+
 .main-footer {
 	position: relative;
 	bottom: -1rem;
@@ -267,9 +312,34 @@ body.main-container::-webkit-scrollbar-thumb:hover {
 }
   
 .main-footer-text {
-	font-size: 1rem;
+	font-size: 15px;
 	font-family: 'Inter';
 	font-weight: 300;
 	color: #003844;
 	margin-bottom: 0.5rem;
 }  
+
+.info .nyc::after,
+.info .d::after {
+  content: '\A';
+  white-space: pre;
+}
+
+@media (max-width: 900px) {
+	.name {
+		font-size: 4rem;
+	}
+	.info {
+		font-size: 1.3rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}	
+	.info .d::after {
+		content: '\A';
+		white-space: normal;
+	}
+	.info .c::after {
+		content: '\A';
+		white-space: pre;
+	  }
+  }

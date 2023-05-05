@@ -18,6 +18,7 @@ body, html {
 
 #homepage {
 	background-color: white;
+	height: 100vh; 
 	overflow-y: hidden; 
 }
 
@@ -114,6 +115,7 @@ body.main-container::-webkit-scrollbar-thumb:hover {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding-top: 5%;
 }
 
 .main {
@@ -122,7 +124,7 @@ body.main-container::-webkit-scrollbar-thumb:hover {
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	height: 50%;
+	min-height: 50%;
 }
 
 .about {
@@ -138,8 +140,8 @@ body.main-container::-webkit-scrollbar-thumb:hover {
 	margin: 3rem;
 	text-align: center;
 	color: #004F60;
-	margin-left: 10rem;
-    margin-right: 10rem;
+	margin-left: 10vw;
+    margin-right: 10vw;
 }
 .body h1, .body h2, .body h3 {
     font-size: 1.2rem;
@@ -165,9 +167,28 @@ body.main-container::-webkit-scrollbar-thumb:hover {
 }
   
 .main-footer-text {
-	font-size: 1rem;
+	font-size: 15px;
 	font-family: 'Inter';
 	font-weight: 300;
 	color: #003844;
 	margin-bottom: 0.5rem;
 }  
+
+@media (max-width: 800px) {
+    .body {
+        margin: 2rem;
+		margin-left: 8vw;
+        margin-right: 8vw;
+    }
+	.about {
+		font-size: 2.5rem;
+	}
+	.body h1, .body h2, .body h3 {
+		font-size: 1rem;
+	}
+	.main-container {
+		padding-top: 20%;
+	}
+}
+
+

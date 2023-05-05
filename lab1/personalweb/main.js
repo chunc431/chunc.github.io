@@ -1,6 +1,21 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const scrollBtn = document.getElementById('scrollBtn');
-  const secondaryPage = document.getElementById('secondaryPage');
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector(".header");
+  const scrollBtn = document.getElementById("scrollBtn");
+  const secondaryPage = document.getElementById("secondaryPage");
+  const modal = document.getElementById("modal-container");
+  const closeBtn = document.querySelector(".close-btn");
+  const gridItems = document.querySelectorAll(".grid-item");
+
+  const handleScroll = () => {
+    const currentScrollTop = window.pageYOffset;
+    if (currentScrollTop > 0) {
+      header.classList.add("scrolling-down");
+    } else {
+      header.classList.remove("scrolling-down");
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
 
   const scrollToElement = (element, duration) => {
     const startPosition = window.pageYOffset;
@@ -29,7 +44,25 @@ document.addEventListener('DOMContentLoaded', () => {
     window.requestAnimationFrame(animation);
   };
 
-  scrollBtn.addEventListener('click', () => {
-    scrollToElement(secondaryPage, 1200); // Adjust the duration (in milliseconds) for a slower or faster scroll
+  scrollBtn.addEventListener("click", () => {
+    scrollToElement(secondaryPage, 1200);
+  });
+
+  const openModal = () => {
+    modal.style.display = "block";
+  };
+
+  const closeModal = () => {
+    modal.style.display = "none";
+  };
+
+  gridItems.forEach((gridItem) => {
+    gridItem.addEventListener("click", () => {
+      openModal();
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    closeModal();
   });
 });
