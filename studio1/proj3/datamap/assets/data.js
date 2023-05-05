@@ -121,13 +121,8 @@ function renderItems(collection) {
 
   //tool tip offset
   document.body.addEventListener("mousemove", (e) => {
-    const xOffset = 300;
-    const yOffset = 100;
-    const toolTip = document.querySelector(".tool-tip");
-    const toolTipWidth = toolTip.offsetWidth;
-    const toolTipHeight = toolTip.offsetHeight;
-    document.querySelector(".tool-tip").style.left = `${e.clientX - toolTipWidth + xOffset}px`;
-    document.querySelector(".tool-tip").style.top = `${e.clientY - toolTipHeight + yOffset}px`;
+    document.querySelector(".tool-tip").style.left = `${e.clientX}px`;
+    document.querySelector(".tool-tip").style.top = `${e.clientY}px`;
   });
 }
 

@@ -1,14 +1,12 @@
 html {
 	width: 100vw;
 	height: 100vh;
-	overflow: hidden;
 	background-color: #EEEDEA;
 }
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	width: 100vw;
 	height: 100vh;
-	overflow: hidden;
 }
 
 #collection {
@@ -41,7 +39,7 @@ body {
 	width: .4rem;
 	height: .4rem;
 	border-radius: 50%;
-	transform: translateY(50%) translateX(-50%) translateY(-23vw);
+	transform: translateY(50%) translateX(-50%);
 }
 .map-dot:hover {
 	box-shadow: 0 0 10px #AD0000;
@@ -56,10 +54,6 @@ body {
 
 .map-container img {
 	width: 100%;
-}
-
-.map-image {
-	transform: translateY(-23vw);
 }
 
 .tool-tip {
@@ -234,23 +228,21 @@ body {
 @media (max-width: 1400px) {
 	html {
 	  width: auto;
-	  height: auto;
 	}
 	
 	body {
 	  width: auto;
-	  height: auto;
 	  overflow: auto;
 	}
   
 	.map-container {
 	  width: 1400px;
-	  height: 1232.16px;
+	  height: 1232.15px;
 	}
   
 	.map-container img {
 	  width: 1400px;
-	  height: 1232.16px;
+	  height: 1232.15px;
 	}
 
 	.pop-up-container{
