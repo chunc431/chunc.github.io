@@ -196,9 +196,9 @@ body, html {
 }
 
 .main-footer {
-	position: relative;
 	text-align: center;
-	padding-bottom: 2rem;
+	position: fixed;
+    bottom: 20px;
 }
   
 .main-footer-text {
@@ -207,7 +207,7 @@ body, html {
 	font-weight: 300;
 	color: #003844;
 	margin-bottom: 0.5rem;
-}  
+}   
 
 /* Custom Scrollbar */
 body.main-container::-webkit-scrollbar {

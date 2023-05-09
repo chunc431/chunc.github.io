@@ -1,18 +1,23 @@
 html {
   background-color: #E1CDA5;
-  font-family: 'Jacques Francois Shadow', cursive;;
+  font-family: 'Jacques Francois Shadow', cursive;
 }
 
 body {
   overflow: hidden;
+  margin: 0;
 }
 
 .title {
+  position: absolute;
   color: #7F7054;
   text-align: center;
-  font-size: 80px;
-  padding: 50px;
+  left: 50%;
+  font-size: 5.5vw;
+  width: max-content;
+  padding: 3.5vw;
   animation: slide-in-right 1s ease-in-out;
+  transform: translateX(-50%);
 }
 @keyframes slide-in-right {
   0% {
@@ -23,8 +28,8 @@ body {
   }
 }
 
-.title-container{
-  height: 200px;
+.title-container {
+  height: 20vh;
   width: 100vw;
   overflow: hidden;
 }
@@ -36,37 +41,46 @@ body {
 .image1 {
   position: absolute;
   z-index: 1;
-  padding-top: 20px;
+  padding-top: 10vh;
+  width: 40%;
+  height: auto;
 }
 
 .image2 {
   position: absolute;
   z-index: 2;
-  margin-left: 560px;
+  left: 50%;
+  padding-top: 3vw;
+  width: 25vw;
+  height: 13vw;
+  transform: translateX(-50%);
 }
+
 .hover:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
 }
+
 .text-center {
   position: absolute;
-  top: 50%;
   left: 50%;
+  margin-top: 9.5vw;
   transform: translate(-50%, -50%);
   text-align: center;
   color: #7F7054;
-  font-size: 40px;
-  padding-top: 200px;
+  font-size: 2.5vw;
   z-index: 3;
 }
 
 .image3 {
   position: absolute;
   z-index: 2;
-  margin-left: 940px;
-  padding-top: 155px;
+  bottom: 0;
+  right: 0;
+  width: 30rem;
   animation: blink 3s linear infinite;
 }
+
 @keyframes blink {
   0% {
     opacity: 1;
@@ -76,5 +90,29 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  .title {
+    margin-top: 70px;
+    margin-bottom: 7vw;
+    font-size: 9vw;
+  }
+  .image1 {
+    padding-top: 40vw;
+    width: 50%;
+  }
+  .image2 {
+    padding-top: 25vw;
+    width: 40vw;
+    height: 22vw;
+  }
+  .text-center {
+    margin-top: 36vw;
+    font-size: 4vw;
+  }
+  .image3 {
+    width: 20rem;
   }
 }

@@ -16,6 +16,24 @@ body {
 	justify-content: center;
 }
 
+::-webkit-scrollbar {
+	width: .5vw;
+	height: .5vw;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #EEEDEA;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #AD0000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #eb7171;
+}
+  
+
 .home-btn {
 	position: absolute;
 	top: 2rem; 
@@ -59,8 +77,6 @@ body {
 .tool-tip {
 	font-family: 'Inria Serif';
 	position: absolute;
-	left: 50%;
-	top: 50%;
 	padding: 10px;
 	background-color: white;
 	color: black;
@@ -71,8 +87,8 @@ body {
 	opacity: 0;
 	pointer-events: none;
 	transition: opacity .3s;
-  }
-  
+}
+
 
 .tool-tip.is-hovering{
 	opacity: 1;
@@ -117,7 +133,7 @@ body {
 	text-align: right;
 }
 .work-order {
-	padding-right: 10.08px;
+	padding-right: 2px;
 	font-size: 11.52px;
 }
 .work-id {
@@ -127,7 +143,8 @@ body {
 
 .title {
 	text-align: center;
-	margin-top: 30px;
+	margin-top: 20px;
+	line-height: 1.4;
 }
 .title-1 {
 	font-weight: bold;
@@ -150,6 +167,7 @@ body {
 	text-align: center;
 	font-size: 14.4px;
 	margin-top: 25px;
+	line-height: 1.4;
 }
 
 .table {
@@ -194,8 +212,9 @@ body {
 .result {
 	text-align: center;
 	font-size: 14.4px;
-	margin-top: 40px;
+	margin-top: 32.5px;
 	font-weight: bold;
+	line-height: 1.4;
 }
 
 .info {
@@ -203,26 +222,99 @@ body {
 	font-size: 11px;
 	margin-top: 50px;
 	font-style: italic;
+	margin-left: .8vw;
+	margin-right: .8vw;
+	line-height: 1.3;
+}
+.info-2 {
+	margin-top: 10px;
+  }
+  
+  .info-3 {
+	margin-bottom: 10px;
+  }
+  
+.back-container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+}
+.back {
+	position: relative;
+	margin-right: 2px;
+	color: black;
+	cursor: pointer;
+	font-size: 30px;
+}
+.back:hover {
+	color: #a8a8a8;
 }
 
-.back {
-	color: #AD0000;
-	padding: 10px 20px;
-	font-weight: bold;
-	text-align: center;
-	font-size: 17.28px;
-	text-decoration: none;
-	display: inline-block;
-	cursor: pointer;
+.color-key {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	background-color: white;
+	border: 2px solid black;
+	padding: 10px;
+	font-size: 14px;
+	z-index: 5;
+	font-family: 'Inria Serif';
 }
-.back-container {
+
+h3 {
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.color-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+.color-box {
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+}
+
+.manhattan {
+	background-color: #8a0000;
+}
+
+.brooklyn {
+	background-color: #520000;
+}
+
+.queens {
+	background-color: #ba5959;
+}
+
+.staten-island {
+	background-color: #c13535;
+}
+
+.bronx {
+	background-color: #cf8080;
+}
+
+.zoom-scroller {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	background-color: #AD0000;
+	border-radius: 50%;
 	display: flex;
 	justify-content: center;
-	margin-top: 25px;
-}
-
-.back:hover {
-	color: #eb7171;
+	align-items: center;
+	font-size: 24px;
+	color: white;
+	cursor: pointer;
+	z-index: 10;
 }
   
 @media (max-width: 1400px) {
@@ -269,10 +361,6 @@ body {
 
 	.info {
 		margin-top: 32.5px;
-	}
-
-	.back-container {
-		margin-top: 20px;
 	}
   }
 

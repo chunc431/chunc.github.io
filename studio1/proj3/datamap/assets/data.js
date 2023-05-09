@@ -60,7 +60,10 @@ function renderItems(collection) {
 
         //create your popup template
         let itemDetails = 
-        `<div class="item-details">
+        `<div class="back-container">
+          <span class="back">&times;</span>
+        </div>
+        <div class="item-details">
           <div class="header">
             <img class="header-logo" src="imgs/logo.png">
             <div class="order-no"><span class="work-order">Work Order</span> <span class="work-id">${item.job_ticket_or_work_order_id}</span></div>
@@ -99,9 +102,6 @@ function renderItems(collection) {
             Email: nycdoh@health.nyc.gov<br>
             You can also visit our website at nyc.gov/health for more information about preventing and addressing rodent activity in and around your property. Thank you for your attention to this matter.</span>
           </div>
-          <div class="back-container">
-            <button class="back">Back</button>
-          </div>
           </div>`;
 
         //clear previous data
@@ -118,6 +118,20 @@ function renderItems(collection) {
       })
     }
   });
+
+const zoomScroller = document.getElementById('zoom-scroller');
+const mapImage = document.querySelector('.map-image img');
+let currentZoom = 1;
+const maxZoom = 3;
+const zoomStep = 0.25;
+
+zoomScroller.addEventListener('click', () => {
+  currentZoom += zoomStep;
+  if (currentZoom > maxZoom) {
+    currentZoom = 1;
+  }
+  mapImage.style.transform = `scale(${currentZoom})`;
+});
 
   //tool tip offset
   document.body.addEventListener("mousemove", (e) => {

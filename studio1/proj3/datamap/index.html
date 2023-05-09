@@ -7,6 +7,7 @@
 		<link href="assets/reset.css" rel="stylesheet">
 		<link href="assets/style.css" rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=Inria Serif' rel='stylesheet'>
+		<link href="assets/custom-scrollbar.css" rel="stylesheet">
 
 		<script defer src="assets/data.js"></script>
 	</head>
@@ -18,7 +19,30 @@
 		<div id="collection" class="map-container">
 			<div class="map-image"><img src="assets/map.png"></div>
 		</div>
-		<div class="pop-up-container">
-		</div>
+		<div class="color-key">
+			<h3>Color Key:</h3>
+			<div class="color-item">
+			  <div class="color-box manhattan"></div>
+			  <span>Manhattan</span>
+			</div>
+			<div class="color-item">
+			  <div class="color-box brooklyn"></div>
+			  <span>Brooklyn</span>
+			</div>
+			<div class="color-item">
+			  <div class="color-box queens"></div>
+			  <span>Queens</span>
+			</div>
+			<div class="color-item">
+			  <div class="color-box staten-island"></div>
+			  <span>Staten Island</span>
+			</div>
+			<div class="color-item">
+			  <div class="color-box bronx"></div>
+			  <span>Bronx</span>
+			</div>
+		  </div>		  
+		<div class="pop-up-container"></div>
+		<div id="zoom-scroller" class="zoom-scroller">+</div>
 	</body>
 </html>

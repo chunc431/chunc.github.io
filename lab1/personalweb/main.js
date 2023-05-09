@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const scrollBtn = document.getElementById("scrollBtn");
   const secondaryPage = document.getElementById("secondaryPage");
   const modal = document.getElementById("modal-container");
-  const closeBtn = document.querySelector(".close-btn");
   const gridItems = document.querySelectorAll(".grid-item");
 
   const handleScroll = () => {
@@ -48,12 +47,39 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollToElement(secondaryPage, 1200);
   });
 
-  const openModal = () => {
-    modal.style.display = "block";
-  };
-
   const closeModal = () => {
     modal.style.display = "none";
+  };
+
+  const openModal = (item) => {
+    modal.style.display = "block";
+
+    let projectDetails = `
+      <div class="project-details">
+      <div class="modal-content">
+        <div class="title">
+          ${item.title}
+        </div>
+        <div class="about">
+          ${item.about}
+        </div>
+        <div class="img">
+          <img class="modal-image" src="${item.image}"/>
+        </div>
+        <a class="link" href="${item.link.url}">
+          ${item.link.text}
+        </a>
+        <div class="description">
+          ${item.description}
+        <span class="close-btn">&times;</span>
+        </div>
+        </div>`;
+
+    modal.innerHTML = '';
+    modal.insertAdjacentHTML('beforeend', projectDetails);
+
+    const closeBtn = document.querySelector(".close-btn");
+    closeBtn.addEventListener("click", closeModal);
   };
 
   gridItems.forEach((gridItem) => {
@@ -62,7 +88,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  closeBtn.addEventListener("click", () => {
-    closeModal();
-  });
+  // Render items function
+  function renderItems(items) {
+    const gridItems = document.querySelectorAll(".grid-item");
+
+    gridItems.forEach((gridItem, index) => {
+      gridItem.addEventListener("click", () => {
+        openModal(items[index]);
+      });
+    });
+  }
+
+  // Fetch data from project.json
+  fetch("project.json")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (items) {
+      renderItems(items); // Items are loaded in their original order
+    });
 });
