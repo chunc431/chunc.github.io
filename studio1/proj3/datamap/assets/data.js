@@ -119,14 +119,6 @@ function renderItems(collection) {
     }
   });
 
-  document.getElementById('zoom-scroller').oninput = function() {
-    const zoomLevel = parseFloat(this.value);
-    document.querySelector('.map-image img').style.transform = `scale(${zoomLevel})`;
-
-    const zoomPercentage = ((zoomLevel - 1) / 2) * 100;
-    document.getElementById('zoom-level').style.width = `${zoomPercentage}%`;
-}
-
   //tool tip offset
   document.body.addEventListener("mousemove", (e) => {
     document.querySelector(".tool-tip").style.left = `${e.clientX}px`;
