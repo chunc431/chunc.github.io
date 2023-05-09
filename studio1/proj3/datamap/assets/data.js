@@ -119,19 +119,13 @@ function renderItems(collection) {
     }
   });
 
-const zoomScroller = document.getElementById('zoom-scroller');
-const mapImage = document.querySelector('.map-image img');
-let currentZoom = 1;
-const maxZoom = 3;
-const zoomStep = 0.25;
+  document.getElementById('zoom-scroller').oninput = function() {
+    const zoomLevel = parseFloat(this.value);
+    document.querySelector('.map-image img').style.transform = `scale(${zoomLevel})`;
 
-zoomScroller.addEventListener('click', () => {
-  currentZoom += zoomStep;
-  if (currentZoom > maxZoom) {
-    currentZoom = 1;
-  }
-  mapImage.style.transform = `scale(${currentZoom})`;
-});
+    const zoomPercentage = ((zoomLevel - 1) / 2) * 100;
+    document.getElementById('zoom-level').style.width = `${zoomPercentage}%`;
+}
 
   //tool tip offset
   document.body.addEventListener("mousemove", (e) => {

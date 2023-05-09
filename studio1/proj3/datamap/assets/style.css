@@ -300,21 +300,39 @@ h3 {
 	background-color: #cf8080;
 }
 
-.zoom-scroller {
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	width: 50px;
-	height: 50px;
-	background-color: #AD0000;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 24px;
-	color: white;
-	cursor: pointer;
-	z-index: 10;
+.slider-container {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 300px; /* Adjust as needed */
+}
+
+#zoom-scroller {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 7.5px;
+    background: #AD0000;
+    outline: none;
+}
+
+#zoom-scroller::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#zoom-level {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    border-radius: 7.5px;
+    background: white;
 }
   
 @media (max-width: 1400px) {
